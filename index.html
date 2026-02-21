@@ -619,8 +619,8 @@
 
         // Animate global pool and total points counters
         setTimeout(() => {
-            animateCounter('globalPoolCounter', 0000);
-            animateCounter('totalPointsCounter', 00);
+            animateCounter('globalPoolCounter', 37500000);
+            animateCounter('totalPointsCounter', 150000);
         }, 500);
 
         // Progress chart
@@ -630,7 +630,7 @@
             const progressText = document.getElementById('progressText');
             
             const targetPoints = 2000;
-            const currentPoints = 0;
+            const currentPoints = 15000;
             const currentProgress = (currentPoints / targetPoints) * 100;
             
             const progressChart = new Chart(ctx, {
